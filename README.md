@@ -17,6 +17,14 @@ mkdir -p ~/.claude/skills && cp -r unslop/skills/unslop ~/.claude/skills/
 
 For a single project, copy it into `.claude/skills/` inside that project instead.
 
+For Codex, copy the same folder into Codex's skills folder.
+
+```bash
+mkdir -p ~/.codex/skills && cp -r unslop/skills/unslop ~/.codex/skills/
+```
+
+For a single project, copy it into `.codex/skills/` inside that project instead.
+
 ## Use
 
 In Claude Code, type `/unslop` with what you want, or just ask in your own words and Claude picks the skill up by itself.
