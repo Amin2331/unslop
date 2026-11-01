@@ -4,7 +4,7 @@ Created by Damir Sokolovsky ([@heydamir](https://x.com/heydamir)), who started t
 
 ![A vibecoded dashboard unslopping itself, frame by frame](skills/unslop/references/refs/story-dashboard-frames.webp)
 
-unslop is a skill for Claude that turns vibecoded, AI-looking UI into a designed interface with its own character. It finds the slop first, the purple gradients, glows, emoji labels, shouty copy and uneven spacing, then sets a direction from your product and fixes the screen pass by pass like a designer doing a redline review. It works in whatever your screen is built with, like Next.js, React, Vue, Svelte, Tailwind or plain HTML and CSS, on dashboards, apps and landing pages, and even on a live site when all you have is a link.
+unslop is a skill for Claude Code and Codex that turns vibecoded, AI-looking UI into a designed interface with its own character. It finds the slop first, the purple gradients, glows, emoji labels, shouty copy and uneven spacing, then sets a direction from your product and fixes the screen pass by pass like a designer doing a redline review. It works in whatever your screen is built with, like Next.js, React, Vue, Svelte, Tailwind or plain HTML and CSS, on dashboards, apps and landing pages, and even on a live site when all you have is a link.
 
 ## Install
 
@@ -17,13 +17,18 @@ mkdir -p ~/.claude/skills && cp -r unslop/skills/unslop ~/.claude/skills/
 
 For a single project, copy it into `.claude/skills/` inside that project instead.
 
-For Codex, copy the same folder into Codex's skills folder.
+For Codex, ask it to install the skill straight from this repo.
 
-```bash
-mkdir -p ~/.codex/skills && cp -r unslop/skills/unslop ~/.codex/skills/
+```
+$skill-installer install https://github.com/heydamir/unslop/tree/main/skills/unslop
 ```
 
-For a single project, copy it into `.codex/skills/` inside that project instead.
+Or copy it by hand into `~/.agents/skills/`, or into `.agents/skills/` inside a single project.
+
+```bash
+git clone https://github.com/heydamir/unslop
+mkdir -p ~/.agents/skills && cp -r unslop/skills/unslop ~/.agents/skills/
+```
 
 To snapshot a live site or create a story video, install Playwright and its Chromium browser from the project directory where you run the skill:
 
@@ -36,7 +41,7 @@ Story videos also require ffmpeg installed and available on your PATH.
 
 ## Use
 
-In Claude Code, type `/unslop` with what you want, or just ask in your own words and Claude picks the skill up by itself.
+In Claude Code, type `/unslop` with what you want. In Codex, type `$unslop` the same way. Or just ask in your own words and the agent picks the skill up by itself.
 
 ```
 /unslop this dashboard
