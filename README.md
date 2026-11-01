@@ -25,6 +25,15 @@ mkdir -p ~/.codex/skills && cp -r unslop/skills/unslop ~/.codex/skills/
 
 For a single project, copy it into `.codex/skills/` inside that project instead.
 
+To snapshot a live site or create a story video, install Playwright and its Chromium browser from the project directory where you run the skill:
+
+```bash
+npm install -D playwright
+npx playwright install chromium
+```
+
+Story videos also require ffmpeg installed and available on your PATH.
+
 ## Use
 
 In Claude Code, type `/unslop` with what you want, or just ask in your own words and Claude picks the skill up by itself.
