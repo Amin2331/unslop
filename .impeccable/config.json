@@ -1,0 +1,26 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "immcho-cafe/index.html"
+        ],
+        "createdAt": "2026-11-06T08:45:00.632Z",
+        "reason": "Claude judged false positive: stage text sits 40px inset via absolute positioning, panel has clamp(24px,4vw,48px) padding, sections inset by .wrap gutters; verified in screenshots at 1440/1024/390"
+      },
+      {
+        "rule": "cream-palette",
+        "value": "*",
+        "files": [
+          "immcho-cafe/index.html"
+        ],
+        "createdAt": "2026-11-06T08:45:05.365Z",
+        "reason": "Claude's design choice: washi-paper ground paired with matcha greens and shu red for a Japanese tea café; taste-skill place guidance prescribes a warm paper ground"
+      }
+    ]
+  }
+}
