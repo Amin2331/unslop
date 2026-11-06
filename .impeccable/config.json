@@ -20,6 +20,15 @@
         ],
         "createdAt": "2026-11-06T08:45:05.365Z",
         "reason": "Claude's design choice: washi-paper ground paired with matcha greens and shu red for a Japanese tea café; taste-skill place guidance prescribes a warm paper ground"
+      },
+      {
+        "rule": "low-contrast",
+        "value": "*",
+        "files": [
+          "immcho-cafe/index.html"
+        ],
+        "createdAt": "2026-11-06T10:03:45.791Z",
+        "reason": "Claude judged sanctioned exception: the only remaining hit is the aria-hidden watermark kanji (.ritual__kanji) behind the ritual section, decorative by design; real text was fixed (marquee kanji darkened)"
       }
     ]
   }
